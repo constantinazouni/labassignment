@@ -13,7 +13,7 @@ git clone https://github.com/constantinazouni/labassignment.git
 ```
 * Change path
 ```
-cd ./labassignment/seip2020_practical_assignments/
+cd ./labassignment/seip2022_practical_assignments/
 ```
 * Build project
 ```

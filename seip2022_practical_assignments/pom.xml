@@ -6,6 +6,10 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>seip2022_practical_assignments</name>
+  <description>
+    seip2022_practical_assignments is a project that includes my lab assignments 
+    for my software engineer practices course.
+  </description>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>

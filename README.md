@@ -4,4 +4,4 @@ information related with software requirements, design, construction, testing et
 tools like git, maven etc. 
 
 # Assignment 2 
-The purpose of this assigment is undertand how to build a java project with maven. The java project purpose is to create a histogram chart based on the frequency of students grades and with the help of [jfree](https://www.jfree.org/) library. For more information on how to generate the histogram please click [here](seip2022_practical_assignments/gradeshistogram/README.md)
+The purpose of this assigment is undertand how to build a java project with maven. The java project purpose is to create a histogram chart based on the frequency of students grades and with the help of [jfree](https://www.jfree.org/) library. For more information on how to generate the histogram please click [here](gradeshistogram/README.md)

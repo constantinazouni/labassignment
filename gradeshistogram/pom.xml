@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>gr.aueb.dmst.constantina</groupId>
+    <artifactId>seip2022_practical_assignments</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>gradeshistogram</groupId>
+  <artifactId>gradeshistogram</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>gradeshistogram</name>
+  <description>
+    HistogramGenerator is a java project application that takes as
+    an argument a path of a txt file containing grades (integers)
+    and generates a frequency histogram chart.
+  </description>
+  <url>http://maven.apache.org</url>
+  <dependencies>    
+    <dependency>
+      <groupId>org.jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.5.3</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>gradeshistogram.HistogramGenerator</mainClass>
+            </manifest>
+          </archive>
+          <descriptorRefs>
+            <descriptorRef>jar-with-dependencies</descriptorRef>
+          </descriptorRefs>
+        </configuration>
+        <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

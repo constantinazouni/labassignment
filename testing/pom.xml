@@ -3,10 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<!-- Replace the following values with your own -->
-	<groupId>gr.aueb.gkortzis</groupId>
-	<artifactId>unittesting</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<parent>
+          <groupId>gr.aueb.dmst.constantina</groupId>
+          <artifactId>seip2022_practical_assignments</artifactId>
+          <version>1.0-SNAPSHOT</version>
+        </parent>
+        <artifactId>testing</artifactId>
 	<name>Unit Testing practice project</name>
-	<description>A project for practicing Unit Testing</description>
-
+	<description>
+          A project for practicing Unit Testing
+        </description>
 </project>

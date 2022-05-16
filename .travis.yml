@@ -1,0 +1,30 @@
+language: java
+jdk: 
+  - openjdk11
+  # - oraclejdk9
+
+branches:
+  only:
+  - master
+
+env:
+  global:
+  - CODECOV_TOKEN="61987326-962f-4759-8a56-f4b8addaec1f"
+
+before_install: 
+  - sudo apt update
+
+install:
+  - sudo apt install maven -y
+
+before_script:
+  - cd ./seip2020_practical_assignments/
+
+script:
+  - mvn clean
+  - mvn package jacoco:report
+
+after_success:
+  - cd ./../test/
+  - ./test_source_code_analyzer.sh
+  - bash <(curl -s https://codecov.io/bash)

@@ -1,4 +1,5 @@
-# Labassignments [![Build Status](https://travis-ci.org/azu/travis-badge.svg?branch=master)](https://travis-ci.org/azu/travis-badge)
+# Labassignments
+ [![Build Status](https://travis-ci.org/azu/travis-badge.svg?branch=master)](https://travis-ci.org/azu/travis-badge)
 
 The purpose of this repository is to host the lab assigments related with the course "Software Technology in Practice". The course aims to provide important
 information related with software requirements, design, construction, testing etc. The laboratory lessons offer important knowlege regarding common software

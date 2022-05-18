@@ -29,4 +29,32 @@ public class MyMath {
         return x * factorial(x-1);
     }
   }
+
+  /**
+   * Checks if an input number x is a prime number.
+   * Throws exception if input is <2.
+   * @param x the input number
+   * @return true if x is a prime number otherwise false
+   * @exception IllegalArgumentException when x < 2
+   */
+  public boolean isPrime(int x) {
+    if (x < 2) {
+      throw new IllegalArgumentException("x should be >= 2");
+    }
+    int i = 2;
+    boolean flag = false;
+    while (i <= x / 2) {
+      // condition for nonprime number
+      if (x % i == 0) {
+        flag = true;
+        break;
+      }
+      ++i;
+    }
+    if (!flag)
+     return true;
+    else
+      return false;
+  }
+
 }

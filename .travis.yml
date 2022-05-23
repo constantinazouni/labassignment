@@ -2,21 +2,16 @@ language: java
 
 jdk:
   - openjdk11
-  - oraclejdk11
+
 branches:
   only:
-  - main
-  - development
-sudo: required
+    - development
+    - main
 
-before_install:
-  - sudo apt update
-install:
-  - sudo apt install maven –y
 before_script:
-  - cd ./labassignment/
   - ls -la
+
 script:
   - mvn clean package
 after_success:
-  - echo “Process terminated successfully”
+  - echo "Process terminated successfully."

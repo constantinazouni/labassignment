@@ -16,7 +16,7 @@ public class FileIOTest {
 
   @Test
   public void testReadFile_validArrayInput() {
-    int[] expected_output = {2, 3, 4, 6, -1, 10, 7, -2, 1, 1, 2, 18, 10, 20,
+    int[] expected_output = {0, 2, 3, 4, 6, -1, 10, 7, -2, 1, 1, 2, 18, 10, 20,
         24, -1, -4, 22, 22, 444, 700, 1000};
     filepath = new File("src/test/resources/valid_input.txt").getAbsolutePath();
     Assert.assertArrayEquals(expected_output, fileio.readFile(filepath));
@@ -40,7 +40,7 @@ public class FileIOTest {
 
   @Test
   public void testReadFileContainsInvalidEntries() {
-    int[] expectedInvalidSample = {2, 3, 4, 6, -1, 10, 7, -2, 1, 1, 2, 10, 20,
+    int[] expectedInvalidSample = {0, 2, 3, 4, 6, -1, 10, 7, -2, 1, 1, 2, 10, 20,
       24, -1, -4, 22, 22, 700, 1000};
     filepath = new File("src/test/resources/invalid_input.txt").getAbsolutePath();
     Assert.assertArrayEquals(expectedInvalidSample, fileio.readFile(filepath));

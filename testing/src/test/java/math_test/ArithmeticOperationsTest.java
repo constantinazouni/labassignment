@@ -29,6 +29,8 @@ public class ArithmeticOperationsTest {
   @Test (expected = ArithmeticException.class)
   public void testDivide_divisionWithZero() {
     arithm.divide(10.0, 0.0);
+    arithm.divide(-10.0, 0.0);
+    arithm.divide(0.0, 0.0);
   }
 
   @Test
@@ -36,7 +38,7 @@ public class ArithmeticOperationsTest {
     Assert.assertEquals(10, arithm.multiply(2, 5));    
     Assert.assertEquals(1368, arithm.multiply(3, 456));
     Assert.assertEquals(100, arithm.multiply(10, 10));
-    Assert.assertEquals(0, arithm.multiply(0, 10));   
+    Assert.assertEquals(0, arithm.multiply(0, 10));
   }
 
   @Test

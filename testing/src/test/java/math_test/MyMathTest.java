@@ -40,7 +40,7 @@ public class MyMathTest {
   }
 
   @Test
-  public void testIsPrime_validInput_notPrime() {   
+  public void testIsPrime_validInput_notPrime() {
     Assert.assertFalse(math.isPrime(4));
     Assert.assertFalse(math.isPrime(6));
     Assert.assertFalse(math.isPrime(8));
@@ -57,6 +57,8 @@ public class MyMathTest {
   public void testIsPrime_invalidInput() {
     exp.expect(IllegalArgumentException.class);
     exp.expectMessage("x should be >= 2");
+    math.isPrime(-1);
+    math.isPrime(0);
     math.isPrime(1);
   }
   

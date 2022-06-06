@@ -38,7 +38,13 @@ public class ArithmeticOperationsTest {
     Assert.assertEquals(10, arithm.multiply(2, 5));    
     Assert.assertEquals(1368, arithm.multiply(3, 456));
     Assert.assertEquals(100, arithm.multiply(10, 10));
+  }
+
+  @Test
+  public void testMultiply_validInputZeroCase() {
     Assert.assertEquals(0, arithm.multiply(0, 10));
+    Assert.assertEquals(0, arithm.multiply(10, 0));
+    Assert.assertEquals(0, arithm.multiply(0, 0));
   }
 
   @Test
@@ -48,6 +54,8 @@ public class ArithmeticOperationsTest {
     arithm.multiply(-2, 5);
     arithm.multiply(2, -5);
     arithm.multiply(-2, -5);
+    arithm.multiply(-2, 0);
+    arithm.multiply(0, -2);
   }
 
   @Test

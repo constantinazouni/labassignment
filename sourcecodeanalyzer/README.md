@@ -11,3 +11,6 @@ were args translate to:
 	arg4 = “OutputFileType” [csv|json]
 example: 
 	java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+
+# UML Diagram 
+![Test Image 1](https://raw.githubusercontent.com/constantinazouni/labassignment/developer2/sourcecodeanalyzer/recources/uml.png?token=GHSAT0AAAAAABSSKDRZKCZ4NRMYC6UQRX7UYU7JVWQ)

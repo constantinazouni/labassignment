@@ -17,5 +17,6 @@
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 <modules>  <module>gradeshistogram</module>
+  <module>sourcecodeanalyzer</module>
   </modules>
 </project>

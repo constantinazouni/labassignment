@@ -50,5 +50,6 @@
   <modules>  
     <module>gradeshistogram</module>
     <module>testing</module>
+    <module>sourcecodeanalyzer</module>
   </modules>
 </project>

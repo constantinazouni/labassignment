@@ -1,20 +1,47 @@
-1. Build the executable Java application with: 
-	mvn package jacoco:report
+# Source Code Analyzer
+A maven project that receives a Java source code file, analyzes it and exports the following metrics:
+* LOC = lines of code
+* NOM = number of methods
+* NOC = number of classes
+## Getting Started 
+### Requirements
+* [java](https://www.java.com/en/) installed
+* [maven](https://maven.apache.org/) installed
 
-2. Run the executable by executing
-	java –jar “jar-with-dependencies” arg0 arg1 arg2 arg3 arg4
-were args translate to: 	
-	arg0 = “JavaSourceCodeInputFile” (e.g., src/test/resources/TestClass.java)
-	arg1 = “sourceCodeAnalyzerType” [regex|strcomp]
-	arg2 = “SourceCodeLocationType” [local|web]
-	arg3 = “OutputFilePath” (e.g., ../output_metrics_file)
-	arg4 = “OutputFileType” [csv|json]
-example: 
-	java –jar ./target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar ./src/test/resources/TestClass.java regex local metrics_results csv
+### Installation
+Clone
+```
+git clone https://github.com/constantinazouni/labassignment.git
+```
+Change path
+```
+cd ./labassignment
+```
+Build
+```
+mvn package jacoco:report
+```
+
+Run
+```
+java –jar ./sourcecodeanalyzer/target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar arg0 arg1 arg2 arg3 arg4
+```
+Where args translate to: 	
+   *	arg0 = “JavaSourceCodeInputFile” (e.g., src/test/resources/TestClass.java)
+   *	arg1 = “sourceCodeAnalyzerType” [regex|strcomp]
+   *	arg2 = “SourceCodeLocationType” [local|web]
+   *	arg3 = “OutputFilePath” (e.g., ../output_metrics_file)
+   *	arg4 = “OutputFileType” [csv|json]
+
+Example
+```
+java –jar ./sourcecodeanalyzer/target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar sourcecodeanalyzer/src/test/resources/TestClass.java regex local outputs csv
+```
+
 
 # Architecture of the module
 ## UML Diagram 
-![Test Image 1](https://raw.githubusercontent.com/constantinazouni/labassignment/developer2/sourcecodeanalyzer/recources/uml.png?token=GHSAT0AAAAAABSSKDRZKCZ4NRMYC6UQRX7UYU7JVWQ)
+![Test Image 1](https://raw.githubusercontent.com/constantinazouni/labassignment/developer2/sourcecodeanalyzer/recources/uml.png?token=GHSAT0AAAAAABSSKDRYATT6ARIFJGVNGZ4YYVAL6HQ)
 
 ## Patterns
 

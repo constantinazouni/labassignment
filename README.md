@@ -10,3 +10,6 @@ The purpose of this assigment is undertand how to build a java project with mave
 
 # Assignment 3 
 The purpose of this assigment is to understand how unit testing and continious integretion works. For this purpose I have created test cases to challenge the functionality of some class that do mathematical operations. Also, I registered in [Travis](https://www.travis-ci.com/) and I requested the continious integration service for this repository. For more information on how to run the tests click [here](testing/README.md)
+
+# Assignment 4 
+The purpose of this assigment is to understand the SOLID principles and the code patterns in order to write better code. For that reason we were given a poor quality project and we were asked to refactor it based on the principles that we learned. Some of the patterns that I used for the refactoring are : strategy, factory and facade. For more information on how to run the refactored program click [here](sourcecodeanalyzer/README.md)

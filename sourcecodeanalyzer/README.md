@@ -41,7 +41,7 @@ java –jar ./sourcecodeanalyzer/target/sourcecodeanalyzer-0.0.1-SNAPSHOT-jar-wi
 
 # Architecture of the module
 ## UML Diagram 
-![Test Image 1](https://raw.githubusercontent.com/constantinazouni/labassignment/developer2/sourcecodeanalyzer/recources/uml.png?token=GHSAT0AAAAAABSSKDRYATT6ARIFJGVNGZ4YYVAL6HQ)
+![Test Image 1](https://raw.githubusercontent.com/constantinazouni/labassignment/developer2/sourcecodeanalyzer/recources/uml.png?token=GHSAT0AAAAAABSSKDRYL5SKAHE2WVZBG7MAYVCAYBQ)
 
 ## Patterns
 
